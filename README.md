@@ -1,4 +1,4 @@
 # Mathematics
-This repository implements simple mathematics formulae :
+This repository implements simple mathematics formulae and techniques, using Python:
 
-find if a number is primary
+
