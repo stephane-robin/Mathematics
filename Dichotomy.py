@@ -24,14 +24,14 @@ b=float(b)
 def f(x):
 	return x-1
 
-def Dichotomy(x,y):                      
-	while abs(x-y)>=0.01:                                    
-		if (f(x)*f(y)<0.) and (f(x)*f((x+y)/2.)<0.):
-			y=(x+y)/2.
+def Dichotomy(x, y):                      
+	while abs(x - y) >= 0.01:                                    
+		if (f(x) * f(y) < 0.) and (f(x) * f((x + y) / 2.) < 0.):
+			y = (x + y) / 2.
 			                                       
-		if (f(x)*f(y)<0.) and (f((x+y)/2.)*f(y)<0.):
-			x=(x+y)/2.
-	return (x+y)/2.
+		if (f(x) * f(y) < 0.) and (f((x + y) / 2.) * f(y) < 0.):
+			x = (x + y) / 2.
+	return (x + y) / 2.
 
 if (f(a)*f(b)>0):
         print" "
