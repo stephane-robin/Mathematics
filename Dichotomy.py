@@ -15,14 +15,12 @@ print "This program gives a zero of a function. It uses the dichotomy method whi
 print "  "
 
 # defining borders of study
-a=input("Please enter the smallest border of the interval of study : ")
-b=input("Please enter the biggest border of the interval of study : ")
-a=float(a)
-b=float(b)
+a = float(input("Please enter the smallest border of the interval of study : "))
+b = float(input("Please enter the biggest border of the interval of study : "))
 
-# defining useful functions
+# defining function f
 def f(x):
-	return x-1
+	return x - 1
 
 def Dichotomy(x, y):                      
 	while abs(x - y) >= 0.01:                                    
@@ -33,18 +31,18 @@ def Dichotomy(x, y):
 			x = (x + y) / 2.
 	return (x + y) / 2.
 
-if (f(a)*f(b)>0):
+if (f(a) * f(b) > 0):
         print" "
         print"It is necessary that the images of the borders have a different sign."
         print"Please change the interval of study"
-elif (f(a)==0):
+elif (f(a) == 0):
         print" "
-        print"The function is nul on : ",a
-elif (f(b)==0):
+        print"The function is nul on : ", a
+elif (f(b) == 0):
         print" "
-        print"The function is nul on : ",b
+        print"The function is nul on : ", b
 else:
         print" "
-        print "The function is nul on : ",Dichotomy(a,b)  
+        print "The function is nul on : ", Dichotomy(a, b)  
 
 os.system("pause")
