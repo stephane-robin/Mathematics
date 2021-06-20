@@ -9,21 +9,19 @@ print ("- Greatest Common Divider by Euclide algorithm -")
 print (" ")
 
 # input of the 2 integers 
-a=input("Please enter the first integer : ") 
-a=int(a)  # making sure a is an integer
-b=input("Please enter the second integer : ")
-b=int(b)
+a = int(input("Please enter the first integer : "))  
+b = int(input("Please enter the second integer : "))
 
-def Euclide(x,y):
-	r=x%y
-	if r==0:
+def Euclide(x, y):
+	r = x % y
+	if r == 0:
 		return y
 	else:
-		return Euclide(y,r)
+		return Euclide(y, r)
 
-if (Euclide(a,b)==1):
+if (Euclide(a, b) == 1):
 	print (a," and ",b," are prime numbers")
 else:
-	print ("The greatest common divider of ",a," and ",b," is : ", Euclide(a,b))
+	print ("The greatest common divider of ", a, " and ", b, " is : ", Euclide(a, b))
 
 # os.system("pause")
